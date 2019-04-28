@@ -627,7 +627,7 @@ section#ourCommunity{
     }
     .slide-wrapper {
         scroll-behavior: auto;
-        
+        overflow-x: scroll;
     }
     .slide-messengers-within {
         padding: 40px 40px 0 0;
