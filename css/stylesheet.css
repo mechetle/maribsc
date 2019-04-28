@@ -612,3 +612,54 @@ section#ourCommunity{
     left: 0;
     margin:0;
   }
+
+
+  /* Small only */
+@media screen and (max-width: 39.9375em) {
+    .slide-message {
+
+        background: none;
+        padding: 0.5em 2em 0.5em 5em;
+        min-height: 50.1vh;
+        color: #fff;
+        background-image: linear-gradient(0deg, rgb(255, 196, 0) 52%, rgba(255,255,255,0) 100%);
+    
+    }
+    .slide-wrapper {
+        scroll-behavior: auto;
+        
+    }
+    .slide-messengers-within {
+        padding: 40px 40px 0 0;
+        width: 100%;
+        left: 0;
+        position: sticky;
+        outline:none;
+        outline-offset: 0px;
+        overflow: visible;
+        margin-top: 0;
+        top: 50%;
+        clip: unset;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }    
+    .links-1,.links-2 {
+        display: none;
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
