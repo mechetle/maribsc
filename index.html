@@ -294,20 +294,18 @@ function pkOnPlayerStateChange(e) {
   	var frm = $(e.target.getIframe());
   	if (e.data === YT.PlayerState.ENDED) {
       if ('player' === frm.attr('id')) {
-        event.target.playVideo();
+          player.playVideo();
       }
   	}
-
   	if (e.data === YT.PlayerState.BUFFERING) {
       if ('player' === frm.attr('id')) {
-         event.target.setPlaybackQuality('hd720');
+         e.target.setPlaybackQuality('hd720');
 		}
   	}
 }
-
 function pkOnPlayerReady(e) {
 	player.mute();
- 	event.target.setPlaybackQuality('hd720');
+ 	e.target.setPlaybackQuality('hd720');
 }
 
 //Load a youtube pixel
