@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maribyrnong College | Home</title>
     <!--Styles-->
@@ -293,18 +294,20 @@ function pkOnPlayerStateChange(e) {
   	var frm = $(e.target.getIframe());
   	if (e.data === YT.PlayerState.ENDED) {
       if ('player' === frm.attr('id')) {
-          player.playVideo();
+        event.target.playVideo();
       }
   	}
+
   	if (e.data === YT.PlayerState.BUFFERING) {
       if ('player' === frm.attr('id')) {
-         e.target.setPlaybackQuality('hd720');
+         event.target.setPlaybackQuality('hd720');
 		}
   	}
 }
+
 function pkOnPlayerReady(e) {
 	player.mute();
- 	e.target.setPlaybackQuality('hd720');
+ 	event.target.setPlaybackQuality('hd720');
 }
 
 //Load a youtube pixel
