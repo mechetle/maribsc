@@ -650,6 +650,11 @@ section#ourCommunity{
     .links-1,.links-2 {
         display: none;
     }
+
+    h1 {
+        font-size: 1.8em;
+        line-height: 1.3em;
+    }
 }
 
 /* Medium and up */
