@@ -12,6 +12,7 @@
   stroke: #002e62 !important;
   stroke-width: 9;
   fill: none;
+  
 }
 
 .loader-anim {
