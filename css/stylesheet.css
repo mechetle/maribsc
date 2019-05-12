@@ -531,13 +531,13 @@ transition-timing-function: cubic-bezier(1, 0.43, 0.14, 0.64);
     padding: 1em 3.5em;
 }
 
-.news-events-tile  a:hover {
+.news-events-tile a:hover {
     outline: #ffffff solid 20px;
 outline-offset: -20px;
 background:rgba(255,196,0,1);
 }
 
-.news-events-tile  a:active {
+.news-events-tile a:active {
     outline: #ffffff solid 10px;
 outline-offset: -9px;
 background:rgba(255,196,0,1);
@@ -588,7 +588,7 @@ background:rgba(255,196,0,1);
     background-blend-mode: darken;
 } 
 
-.discover-tile.secondary--d, .news-events-tile:active {
+.discover-tile.secondary--d:active {
     transform: scale(0.9)
 }
 
