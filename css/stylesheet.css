@@ -486,7 +486,7 @@ transition-timing-function: cubic-bezier(1, 0.43, 0.14, 0.64);
 
 /* */
 .tiles-col-2 {
-    background: #002e62; 
+    /*background: #002e62; */
 } 
 .news-events-tile {
     background: #ffc400;
@@ -586,6 +586,7 @@ background:rgba(255,196,0,1);
     position: relative;
     background-color: rgb(229, 57, 53);
     background-blend-mode: darken;
+    
 } 
 
 .discover-tile.secondary--d:active {
