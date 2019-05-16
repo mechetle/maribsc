@@ -486,6 +486,21 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
+
+function pkOnPlayerStateChange(e) {
+  	var frm = $(e.target.getIframe());
+  	if (e.data === YT.PlayerState.ENDED) {
+      if ('player' === frm.attr('id')) {
+          player.playVideo();
+      }
+  	}
+  	if (e.data === YT.PlayerState.BUFFERING) {
+      if ('player' === frm.attr('id')) {
+         e.target.setPlaybackQuality('hd720');
+		}
+  	}
+}
+
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
     event.target.mute();
