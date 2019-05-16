@@ -142,7 +142,7 @@
         
                 </div>
                 </div>
-                <div class="video_wrap" style="display:none"><div id="player"><iframe width="560" height="315" src="https://www.youtube.com/embed/QmX8PY-Adtg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></div>
+                <div class="video_wrap" style="display:none"><div id="player"></div></div>
         </section>
         <div class="grid-container" id="main">
             <div class="grid-x">
@@ -406,14 +406,14 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-//var player;
+var player;
 
 // onYouTubeIframeAPIReady() is called when the IFrame API is ready to go.
-//function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReady() {
   	player = new YT.Player('player', {
     	height: '360',
       width: '640',
-      videoId: 'YSYDsRzNiQw',
+      videoId: 'YSYDsRzNiQw?enablejsapi=1&vq=hd720&rel=0&mute=1&loop=1&playlist=YSYDsRzNiQw',
       playerVars: { 'autoplay': 1, 'controls': 0, 'showinfo': 0, 'rel': 0, 'enablejsapi':1, 'wmode' : 'transparent'},
       events : {
      	 	'onReady' : pkOnPlayerReady,
