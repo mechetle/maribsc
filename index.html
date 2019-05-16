@@ -505,6 +505,14 @@ function onPlayerStateChange(event) {
 function stopVideo() {
   player.stopVideo();
 }
+
+jQuery(function($){
+	$.when(pkEnableYoutube()).done(function(){
+		setTimeout(function() {
+	 		$('.video_wrap').fadeIn();
+	 	}, 2000);
+	});
+});   
 </script>
 
     <script>
