@@ -22,8 +22,8 @@
 
 * {
     transition-delay: 0.0s;
-    transition-duration: 0.8s;
-    transition-timing-function: cubic-bezier(0.11, 0.97, 0.24, 1.27);
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.91, 0.13, 0.06, 0.87)
 }
 
 
@@ -151,31 +151,44 @@ h2 {
 }
   .upper {text-transform: uppercase}
 
+  .secondNav-v2 {
+    margin-top: 110px;
+}
+
 
 /*
 Navigations  */
 .navigation .grid-container {
     display: flex;
 }
+
 .nav-secondary {
     position: static;
     height: 60px;
     width: 100%;
-    border-top: #002e62 20px solid;
+    float: none;
+    border-top: #cfd8dc 20px solid;
     background: #fff;
 }
+.nav-secondary.secondNav-v2 {
+    max-width: 700px;
+    margin-left: auto;
+    border-top: #cfd8dc 20px solid;
+    background: #fff;
+}
+
 .nav-secondary .secondary-nav-feild {
-    border: #002e62 20px solid;
+    border: #cfd8dc 20px solid;
     border-top: #fff;
     background: #fff;
-    padding: 1em;
+    padding: 0 1em 1em;
     padding-bottom: 0.5em;
     z-index: 3;
-    top: -27px;
-    width: 300px;
+    top: -20px;
+    /* width: 300px; */
     position: absolute;
-    right: 0;
-    font-size: 0.7em;
+    right: 40px;
+    font-size: 0.85em;
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -571,6 +584,51 @@ a.nav-button {
     background: linear-gradient(270deg, rgba(255,255,255,1) 49%, rgba(255,255,255,0) 100%);
 }
 
+/* Nav header main*/
+.nav-header-main .nav-breaking-percau {
+    max-width: 870px;
+}
+.nav-header-main .nav-breaking-percau {
+    width: 870px;
+    position: relative;
+    display: inline-grid;
+    padding: 0;
+    flex-grow: 0;
+}
+.nav-primary.navigation.nav-header-main {
+    background: none;
+    box-shadow: none;
+    transform: translateY(3rem);
+}
+
+.nav-header-main .grid-container.fluid {
+    padding-right: 4.5rem !important;
+    padding-left: 4.5rem !important;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 55px;
+}
+
+.navigation-button-wrap {
+    position: relative;
+    display: inline-flex;
+    padding: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* width: 100%; */
+    /* align-content: flex-end; */
+    /* float: right; */
+    height: 55px;
+    margin-left: auto;
+    order: 2;
+}
+.nav-header-main  .navigation-button-wrap {
+    flex-grow: 0;
+    box-shadow: 0px 5px 29px 0px rgba(11,35,61,0.5);
+}
+.nav-header-main .search-button {
+    /*margin-right: 20px;*/
+}
 
 /* Header temp */
 header {
@@ -580,9 +638,108 @@ header {
     /*outline: #002e62 40px solid;*/
 }
 
-header.front-page-slider {
+.hero-header-wrapper h1 {
+    /*font-size: 3.2em;*/
+    font-size: 9.2vh;
+    line-height: 1em;
+    text-align: center;
+    margin: 0 0 0.67em 0;
+}
+.rellax {
+    transition: none;
+}
+header.front-page-slider, header.front-page-art-wrap {
     margin: 0 auto 135px !important;
 }
+header .front-page-art {
+    overflow-y: hidden;
+    height: calc(100vh - 40px)
+}
+.header-art-button {
+    position: sticky;
+    display: inline-flex;
+    bottom: 0;
+    padding: 0 4.5rem 0;
+    width: 100%;
+    justify-content: space-between;
+}
+.header-art-button #line-thingo {
+    margin-bottom: 2em;
+    height: 81.2px;
+    width: auto;
+}
+.header-art-button .discover-button {
+}
+
+/* Art */
+.header-illustration {
+    max-width: 555px;
+}
+#header-libra.pillar-item {
+    margin: auto;
+    height: 220px;
+    width: 100px;
+}
+.pillar-item {
+    width: 220px;
+    display: inline-flex;
+    transition: none;
+}
+.pillar-item::after {
+    content: "";
+    position: absolute;
+    background: url(../img/header-artwork/header-artwork_blue-pillar.svg);
+    height: 700%;
+    width: 150px;
+    z-index: -1;
+    top: 120px;
+    background-size: contain;
+    transform: translateX(-17%);
+    background-repeat: no-repeat;
+}
+#header-shoe.pillar-item::after {
+    content: "";
+    position: absolute;
+    background: url(../img/header-artwork/header-artwork_red-pillar.svg);
+    height: 700%;
+    width: 150px;
+    z-index: -1;
+    top: 107px;
+    left: 50%;
+    background-size: contain;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+}
+#header-torch.pillar-item::after {
+    content: "";
+    position: absolute;
+    background: url(../img/header-artwork/header-artwork_yellow-pillar.svg);
+    height: 700%;
+    width: 173px;
+    z-index: -1;
+    top: 120px;
+    left: 50%;
+    background-size: contain;
+    transform: translateX(-39%);
+    background-repeat: no-repeat;
+}
+
+#header-shoe {
+    transform: translateY(100px); 
+}
+#header-torch {
+    transform: translateY(200px); 
+    z-index: 3;
+}
+#header-libra.pillar-item img {
+    width: 100%;
+    height: auto;
+}
+#header-illustration-wrap {
+    transform: translateY(-120px);  
+}
+
+/* Slider */
 .slide-wrapper:active {
     cursor: grabbing;
     cursor: -moz-grabbing;
@@ -952,6 +1109,10 @@ background:rgba(229, 57, 53, 0.9),
   display: block;
 }
 
+.nav-header-main .logo-space {
+    height: 140px;
+    transform: translateY(-5px);
+}
 
 
 a.discover-button {
@@ -1037,17 +1198,34 @@ section#ourCommunity{
 Sections
 */
 section#extracurricular {
-    background-image: url(../img/leadership-maribyrnong-art.svg);
-    background-attachment: fixed;
     background-color: #fff;
     min-height: 90vh;
+    height: auto;
+}
+
+section#extracurricular .video_wrap {
+    height: 70%;
+    width: 100%;
+    transform: scale(1.5) translateX(-51%);
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    background-image: url(../img/leadership-maribyrnong-art.svg);
 }
 
 section#extracurricular .overlay {
-    background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0.5) 24%, rgba(255,255,255,0.5) 76%, rgba(255,255,255,1) 95%);
+    background-color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     color: #000;
 }
-
+section#extracurricular .inner {
+    margin-top: 10rem;
+}
 section#extracurricular .overlay a.discover-button {
     border: #002e62 20px solid;
     color: #002e62;
@@ -1094,7 +1272,8 @@ section#extracurricular .info-wrapper p {
   .overlay {
     position: relative;
     background-color: rgba(0, 46, 98, 0.9);
-    background: linear-gradient(135deg, rgba(0,46,98,0.9) 0%, rgba(255,196,0,0.8) 100%);
+    /*
+    background: linear-gradient(135deg, rgba(0,46,98,0.9) 0%, rgba(255,196,0,0.8) 100%);*/
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -1131,6 +1310,74 @@ section#extracurricular .info-wrapper p {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+/*
+Gallery
+*/
+.gallery-small {
+    position: relative;
+}
+.gallery-small-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 48vw;
+    height: 350px;
+    padding-left: 50px;
+    margin-top: 75px;
+    position: relative;
+}
+.gallery-small-wrapper .discover-tile {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-align: center;
+    background-position: center;
+    position: relative;
+    padding: 40px 40px;
+    
+}
+.gallery-small-wrapper .gallery-image {
+    width: 100%;
+    height: 95px;
+    background-size: cover;
+}
+.gallery-small-wrapper .discover-tile .gallery-image ~ * {
+    margin-left: 20px;
+}
+.gallery-small-wrapper .discover-tile p{
+    margin-top: 0 !important;
+    line-height: 1.5em;
+}
+.gallery-small .discover-tile h3{
+    margin-block-end: 0.5em;
+    line-height: 1.2em;
+}
+.gallery-small:after {
+    left: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    top: 0;
+    z-index: 1;
+}
+.leadership {
+    border: #00254e 10px solid;
+}
+
+
+.gallery-small-wrapper .discover-tile ~ .discover-tile {
+    margin-top: 0;
+    margin-left: -20px;
 }
 
 
@@ -1338,6 +1585,20 @@ footer p {
     .nav-breaking-percau {
         display: inline-grid;
     }
+    section#extracurricular .video_wrap {
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+        position: absolute;
+        left: 0;
+        overflow: hidden;
+        top: 0;
+        margin: 0;
+        background-attachment: fixed;
+        padding: 0;
+        background-image: url(../img/leadership-maribyrnong-art.svg);
+    }
+    
 }
 
 /* Large and up */
