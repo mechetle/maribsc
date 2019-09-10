@@ -685,6 +685,9 @@ header .front-page-art {
     display: inline-flex;
     transition: none;
 }
+.pillar-item * {
+    transition: none !important;
+}
 .pillar-item::after {
     content: "";
     position: absolute;
