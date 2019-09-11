@@ -685,7 +685,8 @@ header .front-page-art {
     display: inline-flex;
     transition: none;
 }
-.pillar-item * {
+
+.pillar-item *, .line-thingo * {
     transition: none !important;
 }
 .pillar-item::after {
