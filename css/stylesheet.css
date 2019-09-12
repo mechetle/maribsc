@@ -162,11 +162,11 @@ Navigations  */
     display: flex;
 }
 
-.nav-secondary {
+.nav-secondary { 
     position: static;
     height: 60px;
     width: 100%;
-    float: none;
+    float: none; 
     border-top: #cfd8dc 20px solid;
     background: #fff;
 }
